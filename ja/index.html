@@ -9,14 +9,14 @@
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
-      background: #f0f4f8;
-      color: #1a1a2e;
+      background: #FAFAF8;
+      color: #000000;
       line-height: 1.85;
     }
 
     header {
-      background: linear-gradient(145deg, #060f1e 0%, #0d2347 55%, #152d5c 100%);
-      padding: 22px 24px 40px;
+      background: linear-gradient(170deg, #0D0D0D 0%, #1A1A1A 100%);
+      padding: 20px 24px 44px;
       text-align: center;
       color: #fff;
     }
@@ -25,75 +25,81 @@
       display: flex;
       justify-content: flex-end;
       gap: 6px;
-      margin-bottom: 28px;
+      margin-bottom: 32px;
     }
     .lang-bar a {
-      color: rgba(255,255,255,0.55);
+      color: rgba(255,255,255,0.45);
       text-decoration: none;
-      font-size: 0.75rem;
+      font-size: 0.73rem;
       font-weight: 600;
-      padding: 3px 10px;
+      padding: 3px 11px;
       border-radius: 20px;
-      border: 1px solid rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.15);
       transition: all 0.2s;
-      letter-spacing: 0.3px;
+      letter-spacing: 0.4px;
     }
     .lang-bar a.active {
-      color: #fff;
-      background: rgba(255,255,255,0.14);
-      border-color: rgba(255,255,255,0.45);
+      color: #EF611B;
+      border-color: #EF611B;
+      background: rgba(239,97,27,0.12);
     }
-    .lang-bar a:hover { color: #fff; border-color: rgba(255,255,255,0.45); }
+    .lang-bar a:hover:not(.active) {
+      color: rgba(255,255,255,0.8);
+      border-color: rgba(255,255,255,0.35);
+    }
 
     .logo {
-      font-size: 2.6rem;
+      font-size: 2.8rem;
       font-weight: 800;
       letter-spacing: -1.5px;
       color: #fff;
     }
-    .logo span { color: #4fc3f7; }
+    .logo span { color: #EF611B; }
 
     .tagline {
-      margin-top: 6px;
-      font-size: 0.88rem;
-      color: rgba(255,255,255,0.6);
-      letter-spacing: 0.5px;
+      margin-top: 7px;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.45);
+      letter-spacing: 1px;
+      text-transform: uppercase;
     }
 
     .brand-pills {
       display: flex;
       justify-content: center;
       gap: 10px;
-      margin-top: 14px;
+      margin-top: 16px;
     }
     .brand-pills span {
-      font-size: 0.72rem;
+      font-size: 0.7rem;
       font-weight: 700;
-      color: #4fc3f7;
-      border: 1px solid rgba(79,195,247,0.35);
-      padding: 3px 13px;
+      color: #EF611B;
+      border: 1px solid rgba(239,97,27,0.5);
+      padding: 3px 14px;
       border-radius: 20px;
-      letter-spacing: 1px;
+      letter-spacing: 1.2px;
     }
 
     .screenshots-wrap {
-      background: #e9eef4;
-      padding: 28px 0 16px;
-    }
-    .screenshots-scroll {
-      display: flex;
-      gap: 12px;
+      background: #F5F5F3;
+      padding: 32px 0 20px;
       overflow-x: auto;
-      padding: 0 28px 12px;
       scrollbar-width: none;
       -ms-overflow-style: none;
     }
-    .screenshots-scroll::-webkit-scrollbar { display: none; }
-    .screenshots-scroll img {
-      height: 300px;
+    .screenshots-wrap::-webkit-scrollbar { display: none; }
+    .screenshots-inner {
+      display: flex;
+      gap: 14px;
+      width: max-content;
+      margin: 0 auto;
+      padding: 0 32px 12px;
+    }
+    .screenshots-inner img {
+      height: 310px;
       width: auto;
-      border-radius: 14px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+      border-radius: 16px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.15);
       flex-shrink: 0;
       display: block;
     }
@@ -101,24 +107,25 @@
     main {
       max-width: 760px;
       margin: 0 auto;
-      padding: 24px 20px 72px;
+      padding: 28px 20px 80px;
     }
 
     .card {
       background: #fff;
       border-radius: 14px;
-      box-shadow: 0 2px 18px rgba(0,0,0,0.07);
+      border: 1px solid #EEEEEC;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.05);
       padding: 40px 48px;
     }
     @media (max-width: 600px) {
       .card { padding: 24px 20px; }
-      .logo { font-size: 2rem; }
+      .logo { font-size: 2.2rem; }
     }
 
     .effective {
       display: inline-block;
-      background: #e8f0fb;
-      color: #1a6ed8;
+      background: #FDE8DC;
+      color: #EF611B;
       font-size: 0.8rem;
       font-weight: 600;
       padding: 4px 14px;
@@ -127,38 +134,38 @@
     }
 
     h2 {
-      font-size: 1rem;
+      font-size: 0.98rem;
       font-weight: 700;
-      color: #0a1628;
+      color: #000;
       margin-top: 30px;
       margin-bottom: 10px;
-      padding-bottom: 7px;
-      border-bottom: 2px solid #e8f0fb;
-      padding-left: 10px;
-      border-left: 3px solid #1a6ed8;
+      padding-bottom: 8px;
+      padding-left: 11px;
+      border-left: 3px solid #EF611B;
+      border-bottom: 1px solid #EEEEEC;
     }
     h2:first-of-type { margin-top: 0; }
 
-    p { margin-top: 8px; color: #444; font-size: 0.94rem; }
+    p { margin-top: 8px; color: #444; font-size: 0.93rem; }
 
     ul {
       margin-top: 8px;
       padding-left: 18px;
       color: #444;
-      font-size: 0.94rem;
+      font-size: 0.93rem;
     }
     ul li { margin-top: 5px; }
 
-    a { color: #1a6ed8; text-decoration: none; }
+    a { color: #EF611B; text-decoration: none; }
     a:hover { text-decoration: underline; }
 
     footer {
       text-align: center;
       padding: 28px 24px;
-      font-size: 0.8rem;
-      color: #aaa;
+      font-size: 0.78rem;
+      color: #BBBBBB;
     }
-    footer .sub { margin-top: 4px; color: #ccc; }
+    footer .sub { margin-top: 4px; color: #DDDDDD; }
   </style>
 </head>
 <body>
@@ -179,12 +186,12 @@
 </header>
 
 <div class="screenshots-wrap">
-  <div class="screenshots-scroll">
-    <img src="../images/banner_01.jpg" alt="B-Sync アプリスクリーンショット 1">
-    <img src="../images/banner_02.jpg" alt="B-Sync アプリスクリーンショット 2">
-    <img src="../images/banner_03.jpg" alt="B-Sync アプリスクリーンショット 3">
-    <img src="../images/banner_04.jpg" alt="B-Sync アプリスクリーンショット 4">
-    <img src="../images/banner_05.jpg" alt="B-Sync アプリスクリーンショット 5">
+  <div class="screenshots-inner">
+    <img src="../images/banner_01.jpg" alt="B-Sync スクリーンショット 1">
+    <img src="../images/banner_02.jpg" alt="B-Sync スクリーンショット 2">
+    <img src="../images/banner_03.jpg" alt="B-Sync スクリーンショット 3">
+    <img src="../images/banner_04.jpg" alt="B-Sync スクリーンショット 4">
+    <img src="../images/banner_05.jpg" alt="B-Sync スクリーンショット 5">
   </div>
 </div>
 
@@ -193,9 +200,7 @@
     <span class="effective">施行日：2026年7月</span>
 
     <h2>このポリシーについて</h2>
-    <p>
-      B-Sync は、BUENOFE CO SHIELD 一酸化炭素検知器を含む <strong>Brizl</strong> および <strong>Buenofe</strong> デバイス向けのスマート IoT 制御アプリです。本プライバシーポリシーでは、アプリご利用時にお客様の情報をどのように取り扱うかを説明します。
-    </p>
+    <p>B-Sync は、BUENOFE CO SHIELD 一酸化炭素検知器を含む <strong>Brizl</strong> および <strong>Buenofe</strong> デバイス向けのスマート IoT 制御アプリです。本プライバシーポリシーでは、アプリご利用時にお客様の情報をどのように取り扱うかを説明します。</p>
 
     <h2>収集する情報</h2>
     <p>アプリは以下の情報を収集する場合があります：</p>
@@ -219,35 +224,23 @@
     </ul>
 
     <h2>データの共有</h2>
-    <p>
-      B-Sync はお客様の個人データを第三者に販売・貸与・取引することはありません。センサーデータとデバイスコマンドはアプリ機能のためにバックエンドサーバー（AWS ソウルリージョン）にのみ送信されます。プッシュ通知には Firebase Cloud Messaging（Google）を使用します。広告や分析の第三者とデータを共有することはありません。
-    </p>
+    <p>B-Sync はお客様の個人データを第三者に販売・貸与・取引することはありません。センサーデータとデバイスコマンドはアプリ機能のためにバックエンドサーバー（AWS ソウルリージョン）にのみ送信されます。プッシュ通知には Firebase Cloud Messaging（Google）を使用します。広告や分析の第三者とデータを共有することはありません。</p>
 
     <h2>データセキュリティ</h2>
-    <p>
-      すべての API 通信は HTTPS を使用します。機密情報はデバイスレベルのセキュアストレージ（iOS Keychain / Android Keystore）に保存されます。BLE 通信はデバイスメーカー独自のプロトコルを使用します。
-    </p>
+    <p>すべての API 通信は HTTPS を使用します。機密情報はデバイスレベルのセキュアストレージ（iOS Keychain / Android Keystore）に保存されます。BLE 通信はデバイスメーカー独自のプロトコルを使用します。</p>
 
     <h2>データ保存期間</h2>
-    <p>
-      アカウントデータはアカウントが有効な間保持されます。下記の連絡先にお問い合わせいただくことで、アカウントと関連データの削除をご依頼いただけます。
-    </p>
+    <p>アカウントデータはアカウントが有効な間保持されます。下記の連絡先にお問い合わせいただくことで、アカウントと関連データの削除をご依頼いただけます。</p>
 
     <h2>お子様のプライバシー</h2>
-    <p>
-      B-Sync は 13 歳未満のお子様を対象としていません。お子様から意図的に個人情報を収集することはありません。
-    </p>
+    <p>B-Sync は 13 歳未満のお子様を対象としていません。お子様から意図的に個人情報を収集することはありません。</p>
 
     <h2>お問い合わせ</h2>
-    <p>
-      本プライバシーポリシーに関するご質問は、以下までお問い合わせください：<br>
-      <a href="mailto:nilupalakshantha50@gmail.com">nilupalakshantha50@gmail.com</a>
-    </p>
+    <p>本プライバシーポリシーに関するご質問は、以下までお問い合わせください：<br>
+    <a href="mailto:nilupalakshantha50@gmail.com">nilupalakshantha50@gmail.com</a></p>
 
     <h2>ポリシーの変更</h2>
-    <p>
-      本プライバシーポリシーは随時更新される場合があります。引き続きアプリをご利用いただくことで、更新への同意とみなされます。ページ上部の施行日は最新の改訂日を反映します。
-    </p>
+    <p>本プライバシーポリシーは随時更新される場合があります。引き続きアプリをご利用いただくことで、更新への同意とみなされます。ページ上部の施行日は最新の改訂日を反映します。</p>
   </div>
 </main>
 

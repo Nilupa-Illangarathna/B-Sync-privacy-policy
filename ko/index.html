@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B-Sync – 개인정보처리방침</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+      background: #f0f4f8;
+      color: #1a1a2e;
+      line-height: 1.8;
+    }
+
+    header {
+      background: linear-gradient(145deg, #060f1e 0%, #0d2347 55%, #152d5c 100%);
+      padding: 22px 24px 40px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .lang-bar {
+      display: flex;
+      justify-content: flex-end;
+      gap: 6px;
+      margin-bottom: 28px;
+    }
+    .lang-bar a {
+      color: rgba(255,255,255,0.55);
+      text-decoration: none;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.18);
+      transition: all 0.2s;
+      letter-spacing: 0.3px;
+    }
+    .lang-bar a.active {
+      color: #fff;
+      background: rgba(255,255,255,0.14);
+      border-color: rgba(255,255,255,0.45);
+    }
+    .lang-bar a:hover { color: #fff; border-color: rgba(255,255,255,0.45); }
+
+    .logo {
+      font-size: 2.6rem;
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      color: #fff;
+    }
+    .logo span { color: #4fc3f7; }
+
+    .tagline {
+      margin-top: 6px;
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.6);
+      letter-spacing: 0.5px;
+    }
+
+    .brand-pills {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .brand-pills span {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #4fc3f7;
+      border: 1px solid rgba(79,195,247,0.35);
+      padding: 3px 13px;
+      border-radius: 20px;
+      letter-spacing: 1px;
+    }
+
+    .screenshots-wrap {
+      background: #e9eef4;
+      padding: 28px 0 16px;
+    }
+    .screenshots-scroll {
+      display: flex;
+      gap: 12px;
+      overflow-x: auto;
+      padding: 0 28px 12px;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+    .screenshots-scroll::-webkit-scrollbar { display: none; }
+    .screenshots-scroll img {
+      height: 300px;
+      width: auto;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+      flex-shrink: 0;
+      display: block;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 24px 20px 72px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 2px 18px rgba(0,0,0,0.07);
+      padding: 40px 48px;
+    }
+    @media (max-width: 600px) {
+      .card { padding: 24px 20px; }
+      .logo { font-size: 2rem; }
+    }
+
+    .effective {
+      display: inline-block;
+      background: #e8f0fb;
+      color: #1a6ed8;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #0a1628;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      padding-bottom: 7px;
+      border-bottom: 2px solid #e8f0fb;
+      padding-left: 10px;
+      border-left: 3px solid #1a6ed8;
+    }
+    h2:first-of-type { margin-top: 0; }
+
+    p { margin-top: 8px; color: #444; font-size: 0.94rem; }
+
+    ul {
+      margin-top: 8px;
+      padding-left: 18px;
+      color: #444;
+      font-size: 0.94rem;
+    }
+    ul li { margin-top: 5px; }
+
+    a { color: #1a6ed8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      padding: 28px 24px;
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+    footer .sub { margin-top: 4px; color: #ccc; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="lang-bar">
+    <a href="../en/">EN</a>
+    <a href="./" class="active">한국어</a>
+    <a href="../zh/">中文</a>
+    <a href="../ja/">日本語</a>
+  </div>
+  <div class="logo">B<span>-</span>Sync</div>
+  <div class="tagline">스마트 IoT 통합 제어 솔루션</div>
+  <div class="brand-pills">
+    <span>BRIZL</span>
+    <span>BUENOFE</span>
+  </div>
+</header>
+
+<div class="screenshots-wrap">
+  <div class="screenshots-scroll">
+    <img src="../images/banner_01.jpg" alt="B-Sync 앱 스크린샷 1">
+    <img src="../images/banner_02.jpg" alt="B-Sync 앱 스크린샷 2">
+    <img src="../images/banner_03.jpg" alt="B-Sync 앱 스크린샷 3">
+    <img src="../images/banner_04.jpg" alt="B-Sync 앱 스크린샷 4">
+    <img src="../images/banner_05.jpg" alt="B-Sync 앱 스크린샷 5">
+  </div>
+</div>
+
+<main>
+  <div class="card">
+    <span class="effective">시행일: 2026년 7월</span>
+
+    <h2>정책 소개</h2>
+    <p>
+      B-Sync는 <strong>브리즐(Brizl)</strong> 및 <strong>부앤오프(Buenofe)</strong> 기기를 위한 스마트 IoT 제어 애플리케이션으로, BUENOFE CO SHIELD 일산화탄소 경보기를 포함합니다. 본 개인정보처리방침은 앱 이용 시 귀하의 정보를 처리하는 방식을 설명합니다.
+    </p>
+
+    <h2>수집하는 정보</h2>
+    <p>애플리케이션은 다음 정보를 수집할 수 있습니다:</p>
+    <ul>
+      <li>계정 인증 정보 (휴대폰 번호, 이름, OTP 인증)</li>
+      <li>기기 등록 데이터 (기기 이름, 방 배정)</li>
+      <li>기기 페어링을 위한 BLE(블루투스 저에너지) 연결 식별자</li>
+      <li>연결된 기기의 센서 측정값 (CO 농도, 온도, 습도)</li>
+      <li>알람 전달을 위한 푸시 알림 토큰</li>
+      <li>앱을 통해 제출된 고객 지원 문의 내용</li>
+    </ul>
+
+    <h2>정보 활용 방법</h2>
+    <p>수집된 정보는 다음 목적으로만 사용됩니다:</p>
+    <ul>
+      <li>사용자 인증 및 계정 관리</li>
+      <li>등록된 IoT 기기 연결 및 제어</li>
+      <li>CO, 온도, 습도의 실시간 알림 전달</li>
+      <li>앱 안정성 및 성능 개선</li>
+      <li>고객 지원 제공</li>
+    </ul>
+
+    <h2>데이터 공유</h2>
+    <p>
+      B-Sync는 귀하의 개인정보를 제3자에게 판매, 임대 또는 거래하지 않습니다. 센서 데이터 및 기기 명령은 앱 기능을 위해 당사 백엔드 서버(AWS 서울 리전)로만 전송됩니다. 푸시 알림에는 Firebase Cloud Messaging(Google)이 사용됩니다. 광고 또는 분석 서비스와 데이터를 공유하지 않습니다.
+    </p>
+
+    <h2>데이터 보안</h2>
+    <p>
+      모든 API 통신은 HTTPS를 사용합니다. 민감한 자격 증명은 기기 수준의 보안 저장소(iOS 키체인 / Android 키스토어)에 저장됩니다. BLE 통신은 기기 제조사의 독점 프로토콜을 사용합니다.
+    </p>
+
+    <h2>데이터 보존</h2>
+    <p>
+      계정 데이터는 계정이 활성화된 동안 보존됩니다. 아래 연락처로 문의하시면 계정 및 관련 데이터 삭제를 요청하실 수 있습니다.
+    </p>
+
+    <h2>아동 개인정보</h2>
+    <p>
+      B-Sync는 만 13세 미만 아동을 대상으로 하지 않습니다. 아동으로부터 개인정보를 의도적으로 수집하지 않습니다.
+    </p>
+
+    <h2>연락처</h2>
+    <p>
+      본 개인정보처리방침에 관한 문의사항은 아래로 연락해 주세요:<br>
+      <a href="mailto:nilupalakshantha50@gmail.com">nilupalakshantha50@gmail.com</a>
+    </p>
+
+    <h2>방침 변경</h2>
+    <p>
+      본 개인정보처리방침은 수시로 업데이트될 수 있습니다. 앱을 계속 사용하면 업데이트에 동의한 것으로 간주됩니다. 페이지 상단의 시행일은 최근 개정일을 반영합니다.
+    </p>
+  </div>
+</main>
+
+<footer>
+  &copy; 2026 B-Sync. All rights reserved.
+  <div class="sub">브리즐(Brizl) &nbsp;&middot;&nbsp; 부앤오프(Buenofe)</div>
+</footer>
+
+</body>
+</html>
